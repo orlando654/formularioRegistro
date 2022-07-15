@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>Agenda Electronica</h1>
+
+    <form (submit)="addTask(newTitle, newDescription ,newApellido,newEmail,newCelular,newFecha,newHora)" class="formulario">
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"></span>
+            <input type="text" class="form-control"  #newTitle placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" required>
+          </div>
+        
+    
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="apellido"></span>
+            <input type="text" class="form-control" #newApellido placeholder="Apellido" aria-label="Username" aria-describedby="basic-addon1" required>
+          </div>
+        
+    
+        <div class="input-group mb-3">
+            <input type="email" class="form-control" #newEmail placeholder="Email" aria-label="Email" aria-describedby="basic-addon2" required>
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
+          </div>
+    
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"></span>
+            <input type="number" class="form-control" #newCelular placeholder="Celular" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+    
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Fecha</span>
+            <input type="date" class="form-control" placeholder="fecha" #newFecha  required id="fecha">
+        </div>
+        
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Hora</span>
+            <input type="time" class="form-control" placeholder="hora" #newHora  required name="hora">
+        </div>
+        
+
+        <div class="form-floating">
+            <textarea class="form-control" #newDescription placeholder="Leave a comment here" id="floatingTextarea2" style="width: 500px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+        </div>
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+        
+    </form>
+  </div>

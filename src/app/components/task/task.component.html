@@ -1,0 +1,26 @@
+<div class="card mb-2">
+  <div class="card">
+      <h3> <B>{{ task.title }}  {{task.apellido}}</B></h3>
+   
+      <div>
+          <button (click)="task.hide = !task.hide" class="btn btn-primary">
+             Descripcion
+          </button> <br><br>
+          <button (click)="deleteTask(task)" class="btn btn-danger">
+              Eliminar
+          </button>
+      </div>
+  </div>
+  <div class="Descripción" [hidden]="task.hide">
+      <p >
+          <b> Nombre: </b> {{task.title}}
+          {{task.apellido}} <br>
+          <b>Correo: </b> {{task.email}} <br>
+          <b>Celular: </b> {{task.celular}} <br>
+          <b>Fecha: </b>  {{task.fecha}} <br>
+          <b>Hora: </b> {{task.hora}} <br><br>
+           <b> Descripción: </b><br>
+          {{task.description}}
+        </p>
+  </div>
+</div>

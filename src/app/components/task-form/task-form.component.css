@@ -1,0 +1,33 @@
+ .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+  ;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 70vh;
+} 
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+h1{
+  font-weight: bold;
+  color: white;
+}
